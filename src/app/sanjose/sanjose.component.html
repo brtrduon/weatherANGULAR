@@ -1,0 +1,8 @@
+<p>San Jose</p>
+<div *ngIf="weather['main']">
+    <h3>Humidity: {{ weather['main']['humidity'] }}</h3>
+    <h3>Temperature (Average): {{ weather['main']['temp'] }}</h3>
+    <h3>Temperature (High): {{ weather['main']['temp_max'] }}</h3>
+    <h3>Temperature (Low): {{ weather['main']['temp_min'] }}</h3>
+    <h3>Status: {{ weather['weather'][0]['main'] }}</h3>
+</div>
